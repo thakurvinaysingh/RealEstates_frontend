@@ -6,9 +6,6 @@ import {
   CreditCardIcon,
   BanknotesIcon,
   UserCircleIcon,
-  HeartIcon,
-  DocumentTextIcon,
-  Cog6ToothIcon,
   XMarkIcon
 } from "@heroicons/react/24/outline";
 
@@ -16,13 +13,13 @@ const headerIcons = [HomeIcon, BanknotesIcon, UserCircleIcon];
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: HomeIcon },
-  { name: "My Properties", href: "/dashboard/properties", icon: DocumentTextIcon },
+//   { name: "My Properties", href: "/dashboard/properties", icon: DocumentTextIcon },
   { name: "Investments", href: "/dashboard/investment", icon: ChartBarIcon },
   { name: "Transactions", href: "/dashboard/transaction", icon: CreditCardIcon },
   { name: "Withdraw", href: "/dashboard/withdraw", icon: BanknotesIcon },
-  { name: "Favorites", href: "/dashboard/favorites", icon: HeartIcon },
+//   { name: "Favorites", href: "/dashboard/favorites", icon: HeartIcon },
   { name: "Account", href: "/dashboard/account", icon: UserCircleIcon },
-  { name: "Settings", href: "/dashboard/settings", icon: Cog6ToothIcon }
+//   { name: "Settings", href: "/dashboard/settings", icon: Cog6ToothIcon }
 ];
 
 const UserSidebar = ({ isOpen, onClose }) => {
@@ -43,16 +40,16 @@ const UserSidebar = ({ isOpen, onClose }) => {
     >
       <div className="flex flex-col h-full pt-5 pb-4 overflow-y-auto">
         {/* Header with 3 icons */}
-        <div className="flex items-center justify-center gap-6 mb-8">
+        {/* <div className="flex items-center justify-center gap-6 mb-8">
           {headerIcons.map((Icon, idx) => (
             <div
               key={idx}
-              className="bg-blue-50 text-blue-600 rounded-full p-2 shadow"
+              className="bg-purple-50 text-purple-600 rounded-full p-2 shadow"
             >
               <Icon className="h-6 w-6" />
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Close Button for mobile */}
         <div className="flex justify-end px-4 lg:hidden mb-4">
@@ -75,7 +72,7 @@ const UserSidebar = ({ isOpen, onClose }) => {
                 to={item.href}
                 className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
                   isActive(item.href)
-                    ? "bg-blue-50 text-blue-700 border-r-2 border-blue-700"
+                    ? "bg-purple-50 text-purple-700 border-r-2 border-purple-700"
                     : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                 }`}
                 onClick={handleNavClick}
@@ -83,7 +80,7 @@ const UserSidebar = ({ isOpen, onClose }) => {
                 <Icon
                   className={`mr-3 flex-shrink-0 h-6 w-6 ${
                     isActive(item.href)
-                      ? "text-blue-500"
+                      ? "text-purple-500"
                       : "text-gray-400 group-hover:text-gray-500"
                   }`}
                 />
@@ -95,10 +92,10 @@ const UserSidebar = ({ isOpen, onClose }) => {
 
         {/* Portfolio Section */}
         <div className="px-2 mt-auto mb-4">
-          <div className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg p-4 text-white">
+          <div className="bg-gradient-to-r from-purple-500 to-indigo-600 rounded-lg p-4 text-white">
             <h3 className="text-xs font-medium">Portfolio Value</h3>
             <p className="text-2xl font-bold mt-1">$2,450,000</p>
-            <p className="text-xs text-blue-100 mt-1">+12.5% this month</p>
+            <p className="text-xs text-purple-100 mt-1">+12.5% this month</p>
           </div>
         </div>
       </div>
@@ -154,13 +151,13 @@ export default UserSidebar;
 //                     to={item.href}
 //                     className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
 //                       isActive(item.href)
-//                         ? 'bg-blue-50 text-blue-700 border-r-2 border-blue-700'
+//                         ? 'bg-purple-50 text-purple-700 border-r-2 border-purple-700'
 //                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
 //                     }`}
 //                   >
 //                     <Icon
 //                       className={`mr-3 flex-shrink-0 h-6 w-6 ${
-//                         isActive(item.href) ? 'text-blue-500' : 'text-gray-400 group-hover:text-gray-500'
+//                         isActive(item.href) ? 'text-purple-500' : 'text-gray-400 group-hover:text-gray-500'
 //                       }`}
 //                     />
 //                     {item.name}
@@ -172,10 +169,10 @@ export default UserSidebar;
 
 //           {/* User Stats Card */}
 //           <div className="flex-shrink-0 px-2">
-//             <div className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg p-4 text-white">
+//             <div className="bg-gradient-to-r from-purple-500 to-indigo-600 rounded-lg p-4 text-white">
 //               <h3 className="text-sm font-medium">Portfolio Value</h3>
 //               <p className="text-2xl font-bold mt-1">$2,450,000</p>
-//               <p className="text-xs text-blue-100 mt-1">+12.5% this month</p>
+//               <p className="text-xs text-purple-100 mt-1">+12.5% this month</p>
 //             </div>
 //           </div>
 //         </div>

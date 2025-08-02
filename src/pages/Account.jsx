@@ -106,7 +106,7 @@ const Account = () => {
                     alt="Profile"
                     className="w-20 h-20 rounded-full object-cover"
                   />
-                  <button className="absolute bottom-0 right-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200">
+                  <button className="absolute bottom-0 right-0 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white hover:bg-purple-700 transition-colors duration-200">
                     <CameraIcon className="w-4 h-4" />
                   </button>
                 </div>
@@ -125,7 +125,7 @@ const Account = () => {
                       onClick={() => setActiveTab(tab.id)}
                       className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors duration-200 ${
                         activeTab === tab.id
-                          ? 'bg-blue-50 text-blue-600 border-r-2 border-blue-600'
+                          ? 'bg-purple-50 text-purple-600 border-r-2 border-purple-600'
                           : 'text-gray-700 hover:bg-gray-50'
                       }`}
                     >
@@ -147,11 +147,12 @@ const Account = () => {
                   <div className="flex justify-between items-center mb-6">
                     <h2 className="text-2xl font-bold text-gray-900">Profile Information</h2>
                     <button
-                      onClick={() => setIsEditing(!isEditing)}
-                      className="btn-outline"
-                    >
-                      {isEditing ? 'Cancel' : 'Edit Profile'}
-                    </button>
+                            onClick={() => setIsEditing(!isEditing)}
+                            className="border border-purple-600 text-purple-600 hover:bg-purple-500 hover:text-white font-medium py-2 px-4 rounded-lg transition duration-200"
+                            >
+                            {isEditing ? 'Cancel' : 'Edit Profile'}
+                            </button>
+
                   </div>
 
                   <form onSubmit={handleProfileUpdate}>
@@ -165,7 +166,7 @@ const Account = () => {
                           value={profileData.firstName}
                           onChange={(e) => setProfileData({...profileData, firstName: e.target.value})}
                           disabled={!isEditing}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-50"
                         />
                       </div>
 
@@ -178,7 +179,7 @@ const Account = () => {
                           value={profileData.lastName}
                           onChange={(e) => setProfileData({...profileData, lastName: e.target.value})}
                           disabled={!isEditing}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-50"
                         />
                       </div>
 
@@ -191,7 +192,7 @@ const Account = () => {
                           value={profileData.email}
                           onChange={(e) => setProfileData({...profileData, email: e.target.value})}
                           disabled={!isEditing}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-50"
                         />
                       </div>
 
@@ -204,7 +205,7 @@ const Account = () => {
                           value={profileData.phone}
                           onChange={(e) => setProfileData({...profileData, phone: e.target.value})}
                           disabled={!isEditing}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-50"
                         />
                       </div>
 
@@ -217,7 +218,7 @@ const Account = () => {
                           value={profileData.address}
                           onChange={(e) => setProfileData({...profileData, address: e.target.value})}
                           disabled={!isEditing}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-50"
                         />
                       </div>
 
@@ -230,7 +231,7 @@ const Account = () => {
                           value={profileData.city}
                           onChange={(e) => setProfileData({...profileData, city: e.target.value})}
                           disabled={!isEditing}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-50"
                         />
                       </div>
 
@@ -243,16 +244,20 @@ const Account = () => {
                           value={profileData.state}
                           onChange={(e) => setProfileData({...profileData, state: e.target.value})}
                           disabled={!isEditing}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-50"
                         />
                       </div>
                     </div>
 
                     {isEditing && (
                       <div className="mt-6">
-                        <button type="submit" className="btn-primary">
-                          Save Changes
+                      <button
+                        type="submit"
+                        className="bg-purple-500 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200"
+                        >
+                        Save Changes
                         </button>
+
                       </div>
                     )}
                   </form>
@@ -287,7 +292,7 @@ const Account = () => {
                             onChange={(e) => handleSecurityUpdate('twoFactorAuth', e.target.checked)}
                             className="sr-only peer"
                           />
-                          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-500"></div>
                         </label>
                       </div>
                     </div>
@@ -305,7 +310,7 @@ const Account = () => {
                             onChange={(e) => handleSecurityUpdate('loginAlerts', e.target.checked)}
                             className="sr-only peer"
                           />
-                          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-500"></div>
                         </label>
                       </div>
                     </div>
@@ -340,7 +345,7 @@ const Account = () => {
                             </div>
                           </div>
                           <div className="flex space-x-2">
-                            <button className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                            <button className="text-purple-600 hover:text-purple-700 text-sm font-medium">
                               Edit
                             </button>
                             <button className="text-red-600 hover:text-red-700 text-sm font-medium">
@@ -375,7 +380,7 @@ const Account = () => {
                               onChange={(e) => handleSecurityUpdate('emailNotifications', e.target.checked)}
                               className="sr-only peer"
                             />
-                            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-500"></div>
                           </label>
                         </div>
                       </div>
@@ -396,7 +401,7 @@ const Account = () => {
                               onChange={(e) => handleSecurityUpdate('smsNotifications', e.target.checked)}
                               className="sr-only peer"
                             />
-                            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-500"></div>
                           </label>
                         </div>
                       </div>
@@ -418,7 +423,7 @@ const Account = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="border border-gray-200 rounded-lg p-6">
                       <div className="flex items-center space-x-4 mb-4">
-                        <DocumentTextIcon className="w-8 h-8 text-blue-600" />
+                        <DocumentTextIcon className="w-8 h-8 text-purple-600" />
                         <div>
                           <h4 className="font-semibold text-gray-900">Identity Verification</h4>
                           <p className="text-sm text-gray-600">Driver's License</p>

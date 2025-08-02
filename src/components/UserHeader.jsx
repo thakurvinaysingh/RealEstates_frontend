@@ -32,7 +32,7 @@ const UserHeader = ({ onToggleSidebar }) => {
             <button onClick={onToggleSidebar} className="text-gray-600 lg:hidden">
               <Bars3Icon className="w-6 h-6" />
             </button>
-            <Link to="/dashboard" className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3">
               <div className="w-12 h-10   flex items-center justify-center">
               <img src="/logo.png" alt="" className="" />
               </div>

@@ -141,7 +141,7 @@ const Withdraw = () => {
         <div className="container mx-auto px-4 py-6">
           <div>
             <h1 className="text-3xl font-bold text-gray-900  mb-2">
-              Withdraw Funds
+              Withdraw Funds 
             </h1>
             <p className="text-gray-600">
               Withdraw your earnings to your preferred payment method
@@ -156,14 +156,14 @@ const Withdraw = () => {
           <div className="lg:col-span-2">
             <div className="card p-8 mb-8">
               {/* Available Balance */}
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 mb-8">
+              <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg p-6 mb-8">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Available Balance</h3>
-                    <p className="text-3xl font-bold text-blue-600">{formatCurrency(availableBalance)}</p>
+                    <p className="text-3xl font-bold text-purple-600">{formatCurrency(availableBalance)}</p>
                   </div>
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                    <BanknotesIcon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                    <BanknotesIcon className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
               </div>
@@ -186,12 +186,12 @@ const Withdraw = () => {
                         />
                         <div className={`p-6 border-2 rounded-lg transition-all duration-300 ${
                           withdrawalMethod === method.id
-                            ? 'border-blue-500 bg-blue-50'
+                            ? 'border-purple-500 bg-purple-50'
                             : 'border-gray-200 hover:border-gray-300'
                         }`}>
                           <div className="flex flex-col items-center text-center">
                             <Icon className={`w-8 h-8 mb-3 ${
-                              withdrawalMethod === method.id ? 'text-blue-600' : 'text-gray-400'
+                              withdrawalMethod === method.id ? 'text-purple-600' : 'text-gray-400'
                             }`} />
                             <h4 className="font-semibold text-gray-900 mb-1">{method.name}</h4>
                             <p className="text-sm text-gray-600 mb-2">{method.processingTime}</p>
@@ -220,7 +220,7 @@ const Withdraw = () => {
                       onChange={(e) => setAmount(e.target.value)}
                       min={minimumWithdrawal}
                       max={Math.min(maximumWithdrawal, availableBalance)}
-                      className="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                       placeholder="Enter amount"
                       required
                     />
@@ -271,21 +271,21 @@ const Withdraw = () => {
                   </div>
                 )}
 
-                {/* Submit Button */}
                 <button
-                  type="submit"
-                  disabled={!amount || isProcessing || parseFloat(amount) < minimumWithdrawal}
-                  className="w-full btn-primary py-3 text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isProcessing ? (
-                    <div className="flex items-center justify-center">
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                      Processing...
-                    </div>
-                  ) : (
-                    'Withdraw Funds'
-                  )}
-                </button>
+                    type="submit"
+                    disabled={!amount || isProcessing || parseFloat(amount) < minimumWithdrawal}
+                    className="w-full bg-purple-500 hover:bg-purple-700 text-white py-3 text-lg font-semibold rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                    >
+                    {isProcessing ? (
+                        <div className="flex items-center justify-center">
+                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                        Processing...
+                        </div>
+                    ) : (
+                        'Withdraw Funds'
+                    )}
+                    </button>
+
               </form>
             </div>
           </div>
@@ -295,7 +295,7 @@ const Withdraw = () => {
             {/* Important Information */}
             <div className="card p-6 mb-6">
               <div className="flex items-center mb-4">
-                <InformationCircleIcon className="w-6 h-6 text-blue-600 mr-2" />
+                <InformationCircleIcon className="w-6 h-6 text-purple-600 mr-2" />
                 <h3 className="text-lg font-semibold text-gray-900">Important Information</h3>
               </div>
               <div className="space-y-3 text-sm text-gray-600">

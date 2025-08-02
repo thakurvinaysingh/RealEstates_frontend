@@ -100,10 +100,18 @@ const Investment = () => {
                 Track your real estate investments and returns
               </p>
             </div>
-            <button className="btn-primary mt-4 md:mt-0">
+            {/* <button className="bg-purple-500 rounded-lg py-2 px-2 text-white mt-4 md:mt-0">
               <PlusIcon className="w-5 h-5 mr-2" />
               New Investment
-            </button>
+            </button> */}
+           <Link
+                to="/dashboard/investment/"
+                className="flex items-center gap-2 bg-purple-500 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg shadow-md transition duration-200 mt-4 md:mt-0"
+                >
+                <PlusIcon className="w-5 h-5" />
+                New Investment
+                </Link>
+
           </div>
         </div>
       </div>
