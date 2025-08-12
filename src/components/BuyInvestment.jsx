@@ -72,7 +72,7 @@ export default function BuyInvestment({ property, prop, pricePerSlot: pricePerSl
     try {
       setLoading(true);
       const res = await buySlots(pId, slots);
-      alert(`Investment successful: ${JSON.stringify(res.data)}`);
+      alert("Investment successful");
       // optionally refresh property state here
     } catch (error) {
       console.error(error);

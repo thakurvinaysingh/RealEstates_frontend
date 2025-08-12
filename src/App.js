@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Properties from './pages/Properties';
 import PropertyDetails from './pages/PropertyDetails';
-import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import About from './pages/About';
@@ -16,41 +15,42 @@ import DashboardProvider from "./context/DashboardContext.jsx";
 import PrivateRoute from './routes/PrivateRoute';
 import ScrollToTop from "./components/ScrollToTop";
 
+//admin
+import Layout from "./components/admin/layout/Layout";
+import AdminDashboard from "./pages/admin/Dashboard";
+import AdminPropertyList from "./pages/admin/PropertyList";
+import AdminCreateProperty from "./pages/admin/CreateProperty";
+import AdminEditProperty from "./pages/admin/EditProperty";
+
 import './index.css';
 
 function App() {
   return (
     <Router>
-        <ScrollToTop />
-          <Routes>
-         
-            <Route path="/" element={<Home />} />
-            <Route path="/properties" element={<Properties />} />
-            <Route path="/property/:slug" element={<PropertyDetails />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            {/* <Route path="/disclaimer" element={<Disclaimer />} />
+      <ScrollToTop />
+      <Routes>
+        {/* Public routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="/properties" element={<Properties />} />
+        <Route path="/property/:slug" element={<PropertyDetails />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
-           
-            {/* <Route path="/dashboard/investment" element={<Investment />} />
-            <Route path="/dashboard/transaction" element={<Transaction />} />
-            <Route path="/dashboard/withdraw" element={<Withdraw />} />
-            <Route path="/dashboard/account" element={<Account />} /> */}
-          
+        {/* Admin routes */}
+        <Route path="/admin" element={<Layout><AdminDashboard /></Layout>} />
+        <Route path="/admin/properties" element={<Layout><AdminPropertyList /></Layout>} />
+        <Route path="/admin/properties/create" element={<AdminCreateProperty />} />
+        <Route path="/admin/properties/edit/:id" element={<AdminEditProperty />} />
 
-           {/* Protected routes */}
+        {/* Protected routes */}
         <Route element={<PrivateRoute />}>
-         
           <Route
             path="/dashboard/*"
             element={
               <DashboardProvider>
                 <Routes>
-                <Route path="dashboard" element={<Dashboard />} />
                   <Route path="investment" element={<Investment />} />
                   <Route path="transaction" element={<Transaction />} />
                   <Route path="withdraw" element={<Withdraw />} />
@@ -60,8 +60,7 @@ function App() {
             }
           />
         </Route>
-          </Routes>
- 
+      </Routes>
     </Router>
   );
 }
