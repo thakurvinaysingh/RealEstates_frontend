@@ -41,7 +41,7 @@ function App() {
         {/* Admin routes */}
         <Route path="/admin" element={<Layout><AdminDashboard /></Layout>} />
         <Route path="/admin/properties" element={<Layout><AdminPropertyList /></Layout>} />
-        <Route path="/admin/properties/create" element={<AdminCreateProperty />} />
+        <Route path="/admin/properties/create" element={<Layout><AdminCreateProperty /></Layout>} />
         <Route path="/admin/properties/edit/:id" element={<AdminEditProperty />} />
 
         {/* Protected routes */}

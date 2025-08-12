@@ -18,6 +18,7 @@ const Dashboard = () => {
     try {
       const data = await apiService.getDashboardStats();
       setStats(data);
+      console.log(data)
     } catch (error) {
       toast({
         title: 'Error',

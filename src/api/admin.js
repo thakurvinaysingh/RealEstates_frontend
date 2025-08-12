@@ -64,7 +64,12 @@ class ApiService {
     const properties = await this.getProperties();
     
     const totalProperties = properties.length;
-    const totalInvested = properties.reduce((sum, prop) => sum + (prop.currentAmount || 0), 0);
+    // const totalInvested = properties.reduce((sum, prop) => sum + (Number(prop.currentAmount) || 0), 0);
+    const totalInvested = properties.reduce((sum, prop) => {
+      // Convert to string, remove commas, then to number
+      const amount = Number(String(prop.currentAmount || 0).replace(/,/g, ""));
+      return sum + amount;
+    }, 0);
     const averageReturnRate = properties.length > 0 
       ? properties.reduce((sum, prop) => sum + (parseFloat(prop.annualReturn) || 0), 0) / properties.length 
       : 0;
