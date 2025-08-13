@@ -21,6 +21,8 @@ import AdminDashboard from "./pages/admin/Dashboard";
 import AdminPropertyList from "./pages/admin/PropertyList";
 import AdminCreateProperty from "./pages/admin/CreateProperty";
 import AdminEditProperty from "./pages/admin/EditProperty";
+import AdminUsersOnePage from './pages/admin/UserAdmin.jsx';
+import AdminUserViewPage from './pages/admin/AdminUserViewPage.jsx';
 
 import './index.css';
 
@@ -43,6 +45,8 @@ function App() {
         <Route path="/admin/properties" element={<Layout><AdminPropertyList /></Layout>} />
         <Route path="/admin/properties/create" element={<Layout><AdminCreateProperty /></Layout>} />
         <Route path="/admin/properties/edit/:id" element={<AdminEditProperty />} />
+        <Route path="/admin/users-list" element={<Layout><AdminUsersOnePage /></Layout>} />
+        <Route path="/admin/users/:userId" element={<Layout><AdminUserViewPage /></Layout>} />
 
         {/* Protected routes */}
         <Route element={<PrivateRoute />}>

@@ -23,8 +23,8 @@ const Sidebar = ({ isOpen, onClose }) => {
   ];
 
   const userManagement = [
-    { name: 'All Users', href: '/admin/users', icon: Users },
-    { name: 'Add User', href: '/admin/users/create', icon: UserPlus },
+    { name: 'All Users', href: '/admin/users-list', icon: Users },
+    // { name: 'Add User', href: '/admin/users/create', icon: UserPlus },
   ];
 
   const userActions = [
@@ -62,7 +62,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               <Building2 className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold text-blue-900">
-              PropertyAdmin
+              Admin
             </span>
           </Link>
           <Button
