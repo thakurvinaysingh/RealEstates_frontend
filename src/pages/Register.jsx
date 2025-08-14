@@ -79,7 +79,7 @@ const Register = () => {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900">Create Account</h2>
-          <p className="text-gray-600 mt-2">Join Own-A-Bid and find your dream property</p>
+          <p className="text-gray-600 mt-2">Join Propy Cons and find your dream property</p>
         </div>
 
         <div className="card p-8">
@@ -235,7 +235,7 @@ const Register = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full rounded-lg bg-purple-600 hover:bg-purple-600 py-3 text-lg text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full rounded-lg bg-[#4e0dff] hover:bg-[#4e0dff] py-3 text-lg text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center">
@@ -270,7 +270,7 @@ const Register = () => {
 
               <button
                 type="submit"
-                className="w-full rounded-lg bg-purple-600 hover:bg-purple-600 py-3 text-lg text-white font-semibold"
+                className="w-full rounded-lg bg-[#4e0dff] hover:bg-[#4e0dff] py-3 text-lg text-white font-semibold"
               >
                 Verify & Continue
               </button>
@@ -311,7 +311,7 @@ const Register = () => {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Already have an account?{' '}
-              <Link to="/login" className="font-medium text-purple-600 hover:text-blue-700">Sign in here</Link>
+              <Link to="/login" className="font-medium text-[#4e0dff] hover:text-[$e0dff]">Sign in here</Link>
             </p>
           </div>
         </div>

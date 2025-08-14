@@ -45,7 +45,7 @@ const InvestmentStats = () => {
           </p>
           <a
             href="/"
-            className="inline-block bg-purple-600 hover:bg-purple-700 transition text-white font-semibold px-6 py-3 rounded-lg shadow"
+            className="inline-block bg-[#4e0dff] hover:bg-[#4e0dff] transition text-white font-semibold px-6 py-3 rounded-lg shadow"
           >
             Start Exploring
           </a>

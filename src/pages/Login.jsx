@@ -41,7 +41,7 @@ const Login = () => {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900">Welcome</h2>
-          <p className="text-gray-600 mt-2">Sign in to your Own-A-Bid account</p>
+          <p className="text-gray-600 mt-2">Sign in to your Propy Cons account</p>
         </div>
 
         <div className="card p-8">
@@ -110,7 +110,7 @@ const Login = () => {
                   Remember me
                 </label>
               </div>
-              <Link to="/forgot-password" className="text-sm text-purple-600 hover:text-blue-700 font-medium">
+              <Link to="/forgot-password" className="text-sm text-[#5927e3] hover:text-[#4e0dff] font-medium">
                 Forgot password?
               </Link>
             </div>
@@ -119,7 +119,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full rounded-lg bg-purple-600 hover:bg-purple-700 text-white py-3 text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full rounded-lg bg-[#4e0dff] hover:bg-[#4e0dff] text-white py-3 text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <div className="flex items-center justify-center">
@@ -161,7 +161,7 @@ const Login = () => {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Don't have an account?{" "}
-              <Link to="/register" className="font-medium text-purple-600 hover:text-blue-700">
+              <Link to="/register" className="font-medium text-[#4e0dff] hover:text-[#4e0dff]">
                 Sign up for free
               </Link>
             </p>

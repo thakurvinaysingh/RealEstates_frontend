@@ -137,7 +137,7 @@ console.log("hello",properties)
           <div className="container mx-auto px-4 py-8">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-4 lg:space-y-0">
               <div>
-                <h1 className="heading-lg text-gray-900 mb-2">Properties</h1>
+                <h1 className="heading-lg text-[#13216e] mb-2">Properties</h1>
                 <p className="text-gray-600">
                   Discover {filteredProperties.length} amazing properties in prime locations
                 </p>

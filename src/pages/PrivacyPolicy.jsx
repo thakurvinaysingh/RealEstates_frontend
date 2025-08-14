@@ -4,7 +4,7 @@ import HomeLayout from '../layouts/HomeLayout';
 const PrivacyPolicy = () => {
   return (
     <HomeLayout>
-    <div className="min-h-screen py-12 bg-gradient-to-br from-purple-100 via-white to-indigo-50">
+    <div className="min-h-screen py-12 bg-gradient-to-br from-white via-white to-indigo-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-xl text-gray-600">
-              How Own-A-Bit collects, uses, and protects your information
+              How Propy Cons collects, uses, and protects your information
             </p>
             <p className="text-sm text-gray-500 mt-2">
               Last updated: January 15, 2025
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
               <h2 className="text-2xl font-bold text-blue-600 mb-4">🔒 Your Privacy Matters</h2>
               <p className="text-blue-700 leading-relaxed">
-                At PropertyHub, we are committed to protecting your privacy and ensuring 
+                At Propy Cons, we are committed to protecting your privacy and ensuring 
                 the security of your personal information. This privacy policy explains how we 
                 collect, use, and safeguard your data when you use our real estate services.
               </p>
@@ -126,7 +126,7 @@ const PrivacyPolicy = () => {
                   please contact us:
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="text-gray-700"><strong>Email:</strong> privacy@OwnABit.com</p>
+                  <p className="text-gray-700"><strong>Email:</strong> privacy@Propy Cons.com</p>
                   <p className="text-gray-700"><strong>Phone:</strong> +1 (555) 123-4567</p>
                   <p className="text-gray-700"><strong>Address:</strong> 123 Real Estate Ave, Property City, PC 12345</p>
                   <p className="text-gray-700"><strong>Response Time:</strong> Within 48 hours</p>

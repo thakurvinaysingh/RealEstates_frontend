@@ -35,7 +35,7 @@ const MarketSection = () => {
             <div className="flex items-center justify-center lg:justify-start space-x-4">
               <a
                 href="/properties"
-                className="px-8 py-4 bg-purple-600 text-white font-medium rounded-lg shadow-lg hover:bg-purple-700 transition"
+                className="px-8 py-4 bg-[#4e0dff] text-white font-medium rounded-lg shadow-lg hover:bg-[#4e0dff] transition"
               >
                 Start Exploring
               </a>

@@ -71,7 +71,7 @@ const FeaturedProperties = () => {
           </h2>
           <a
             href="/properties"
-            className="inline-block px-6 py-3 bg-white shadow-lg rounded-lg text-blue-900 font-semibold 
+            className="inline-block px-6 py-3 bg-white shadow-lg rounded-lg text-[#4e0dff] hover:bg-[#4e0dff] hover:text-white font-semibold 
             hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-700 transition"
           >
             Browse All Properties

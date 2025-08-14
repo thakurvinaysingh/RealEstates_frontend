@@ -4,13 +4,13 @@ import HomeLayout from '../layouts/HomeLayout';
 const About = () => {
   return (
     <HomeLayout>
-    <div className="min-h-screen py-12 bg-gradient-to-br from-purple-100 via-white to-indigo-50">
+    <div className="min-h-screen py-12 bg-gradient-to-br from-white via-white to-indigo-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 ">
-              About Own-A-Bit
+              About Propy Cons
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Your trusted partner in real estate since 2010 - Connecting dreams with reality
@@ -22,7 +22,7 @@ const About = () => {
             <div className="card p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">🏡 Our Mission</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                At Own-A-Bit, we are dedicated to revolutionizing the real estate experience 
+                At Propy Cons, we are dedicated to revolutionizing the real estate experience 
                 by providing exceptional service, expert guidance, and innovative solutions. 
                 Our mission is to make property transactions seamless, transparent, and 
                 rewarding for every client.
@@ -67,7 +67,7 @@ const About = () => {
 
           {/* Features Section */}
           <div className="card p-8 mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center ">Why Choose Own-A-Bit?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center ">Why Choose Propy Cons?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -130,7 +130,7 @@ const About = () => {
                     <span className="w-5 h-5 bg-blue-600 rounded-full mr-3 flex items-center justify-center">
                       <span className="text-white text-xs">@</span>
                     </span>
-                    Email: info@OwnABit.com
+                    Email: info@Propy Cons.com
                   </p>
                   <p className="flex items-center">
                     <span className="w-5 h-5 bg-green-600 rounded-full mr-3 flex items-center justify-center">

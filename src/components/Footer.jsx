@@ -15,7 +15,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#1e263a] text-white">
       <div className="container mx-auto px-4">
         {/* Top Footer */}
         <div className="py-16">
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition font-playfair">
-                    Own-A-Bit
+                    Propy Cons
                   </h3>
                   <p className="text-sm text-gray-400">Premium Real Estate</p>
                 </div>
@@ -56,7 +56,7 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+              <h4 className="text-2xl font-semibold mb-6">Quick Links</h4>
               <ul className="space-y-3 text-sm">
                 {['Home', 'Properties', 'About Us', 'Contact'].map((label) => (
                   <li key={label}>
@@ -74,7 +74,7 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="text-lg font-semibold mb-6">Services</h4>
+              <h4 className="text-2xl font-semibold mb-6">Services</h4>
               <ul className="space-y-3 text-sm text-gray-300">
                 {[
                   'Residential Sales',

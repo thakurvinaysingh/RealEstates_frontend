@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const SearchFilter = () => {
   return (
-    <div className="w-full max-w-3xl mx-auto p-8 bg-white shadow-2xl rounded-2xl grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="w-full max-w-full mx-auto p-8 bg-white shadow-2xl rounded-2xl grid grid-cols-1 md:grid-cols-3 gap-4">
     {/* Location Dropdown */}
     <div className="relative">
       <select className="w-full h-14 appearance-none pl-12 pr-6 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-300">
@@ -39,7 +39,7 @@ const SearchFilter = () => {
     </div>
   
     {/* Search Button */}
-    <button className="w-full h-14 bg-purple-600 text-white font-medium rounded-xl shadow hover:bg-purple-700 transition">
+    <button className="w-full h-14 bg-[#4e0dff] text-white font-medium rounded-xl shadow hover:bg-[#4e0dff] transition">
       Search
     </button>
   </div>

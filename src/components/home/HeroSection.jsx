@@ -8,12 +8,12 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
           <div>
-            <h5 className="text-purple-600 font-semibold mb-2">
+            <h5 className="text-[#4e0dff] font-semibold mb-2">
               A smarter, better way to invest
             </h5>
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-blue-900 leading-tight mb-4">
+            <h1 className="text-5xl lg:text-6xl font-extrabold text-[#13216e] leading-tight mb-4">
               Real Estate <br />
-              Investment For <span className="text-purple-600">Everyone</span>
+              Investment For <span className="text-[#4e0dff]">Everyone</span>
             </h1>
             <p className="text-lg text-gray-700 mb-8">
               Buy shares of rental properties, earn monthly income, and watch your money grow
@@ -21,13 +21,13 @@ const HeroSection = () => {
             <div className="flex gap-4">
               <a
                 href="/properties"
-                className="px-8 py-4 bg-purple-600 text-white font-medium rounded-lg shadow-lg hover:bg-purple-700 transition"
+                className="px-8 py-4 bg-[#4e0dff] text-white font-medium rounded-lg shadow-lg hover:bg-[#4e0dff] transition"
               >
                 Start Exploring
               </a>
               <a
                 href="/business-loan"
-                className="px-8 py-4 bg-white text-blue-900 font-medium rounded-lg shadow-lg hover:bg-gray-100 transition"
+                className="px-8 py-4 bg-white text-[#4e0dff] font-medium rounded-lg shadow-lg hover:bg-[#4e0dff]  hover:text-white transition"
               >
                 Get Funding
               </a>
