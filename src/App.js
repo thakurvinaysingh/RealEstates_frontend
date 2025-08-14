@@ -6,14 +6,19 @@ import PropertyDetails from './pages/PropertyDetails';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import About from './pages/About';
+import DashboardProvider from "./context/DashboardContext.jsx";
+import PrivateRoute from './routes/PrivateRoute';
+import ScrollToTop from "./components/ScrollToTop";
+
+//user dashboard
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Investment from './pages/Investment';
 import Transaction from './pages/Transaction';
 import Withdraw from './pages/Withdraw';
 import Account from './pages/Account';
-import DashboardProvider from "./context/DashboardContext.jsx";
-import PrivateRoute from './routes/PrivateRoute';
-import ScrollToTop from "./components/ScrollToTop";
+import Dashboard from './pages/Dashboard.jsx';
+
+
 
 //admin
 import Layout from "./components/admin/layout/Layout";
@@ -55,6 +60,7 @@ function App() {
             element={
               <DashboardProvider>
                 <Routes>
+                  <Route path="user" element={<Dashboard />} />
                   <Route path="investment" element={<Investment />} />
                   <Route path="transaction" element={<Transaction />} />
                   <Route path="withdraw" element={<Withdraw />} />

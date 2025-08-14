@@ -12,7 +12,7 @@ import {
 const headerIcons = [HomeIcon, BanknotesIcon, UserCircleIcon];
 
 const navigation = [
-  { name: "Dashboard", href: "/dashboard", icon: HomeIcon },
+  { name: "Dashboard", href: "/dashboard/user", icon: HomeIcon },
 //   { name: "My Properties", href: "/dashboard/properties", icon: DocumentTextIcon },
   { name: "Investments", href: "/dashboard/investment", icon: ChartBarIcon },
   { name: "Transactions", href: "/dashboard/transaction", icon: CreditCardIcon },

@@ -20,7 +20,7 @@ const Header = () => {
   const navigation = [
     { name: 'Home', href: '/', icon: HomeIcon },
     { name: 'Properties', href: '/properties', icon: BuildingOfficeIcon },
-    { name: 'Dashboard', href: '/dashboard', icon: TableCellsIcon },
+    { name: 'Dashboard', href: '/dashboard/user', icon: TableCellsIcon },
     { name: 'About', href: '/about', icon: InformationCircleIcon },
     { name: 'Privacy Policy', href: '/privacy-policy', icon: LockClosedIcon },
   ];
